@@ -151,7 +151,7 @@ while place_order:
                     print(f"{quant} {item_name}(s) added to your order.")
                 else:
                     # Tell the customer their selection was not valid
-                    print(f"Item number {menu_selection} was not valid.")
+                    print(f"Item number {menu_selection} was not a valid selection.")
             else:
                 # Tell the customer they didn't select a number
                 print("You didn't select a number.")
@@ -235,4 +235,4 @@ for item in order:
 # and print the prices.
 total_price = sum(item["Price"] * item["Quantity"] for item in order) 
 
-print(f"\nThe total price for the oreder is: ${total_price:.2f}")
+print(f"\nThe total price for the order is: ${total_price:.2f}")
